@@ -7,6 +7,21 @@ app.get('/', function (req, res){
     res.sendFile(file)
 })
 
+app.get('/registro', function (req, res){
+    let file = path.resolve('registro.html')
+    res.sendFile(file)
+})
+
+app.get('/login', function (req, res){
+    let file = path.resolve('login.html')
+    res.sendFile(file)
+})
+
+app.get('/miscompras', function (req, res){
+    let file = path.resolve('miscompras.html')
+    res.sendFile(file)
+})
+
 app.get('*', function(req, res){
     if (req.url.endsWith('.css')){
         let file = path.resolve('styles' + req.url)
@@ -23,5 +38,4 @@ app.get('*', function(req, res){
 
 })
 app.listen(4040)
-
 

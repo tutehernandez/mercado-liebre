@@ -1,0 +1,179 @@
+:root {
+    --color-amarillo: #EAC926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-grisoscuro:#666;
+    --color-grisclaro: #ebebeb;
+    --color-verde:#39b54a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-grisclaro);
+}
+
+.head {
+    background-color: var(--color-amarillo);
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.compraen {
+    font-size: 12px;
+}
+.navegador {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.hamburger-container {
+    text-align: center;
+    background-color: #0044aa;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    isolation: isolate;
+}
+
+.hamburger-container:hover .links {
+    display: block;
+    cursor: pointer;
+    background-color: #0022aa;
+}
+
+.links{ 
+    display: none;
+    font-size: 14px;
+    padding: 4px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+.titulares {
+    font-size: 24px;
+    color: var(--color-grisoscuro);
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.productos{
+    margin: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+.fa-truck {
+    color: var(--color-verde);
+    border-radius: 60%;
+    border: 1px solid #39B54A;
+    padding: 6px;
+    
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: var(--color-verde);
+}
+
+.descripciones {
+    font-size: 16px;
+    color: var(--color-grisoscuro);
+}
+
+footer {
+    background-color: white;
+}
+
+.piedepagina {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logoazul {
+    color: var(--color-celeste);
+}
+
+.titulopie {
+    font-size: 16px;
+    color: var(--color-grisoscuro)
+}
+
+.parrafospie {
+    font-size: 12px;
+    color: var(--color-grisoscuro);
+}
+
+.artpie {
+    margin: 20px 0px;
+}
+
+.login {
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    border: 0px;
+    width: 90%;
+}
+
+.enviar {
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    border: 0px;
+    width: 90%;
+    color: white;
+    background-color: #0044aa; ;    
+}
+
+.enviar:hover {
+    background-color: #0022aa;
+}
+
+.borrar {
+    padding: 10px;
+    margin: 20px 20px;
+    border-radius: 5px;
+    border: 0px;
+    width: 90%;
+    color: white;
+    background-color: #aa0044;  
+}
+
+.borrar:hover {
+    background-color: #cc1155;
+}
+
+button {
+    outline: 0;
+}
