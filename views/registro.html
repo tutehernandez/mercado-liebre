@@ -3,26 +3,29 @@
   <head>
     <title>Mercado Liebre</title>
     <meta charset='uft-8'>
-    <link rel="stylesheet" href="style_ml.css">
+    <link rel="stylesheet" href="styles/style_ml.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   </head>
 
 <body>
-  <header class="head">  
-    <img class="w-50" width="auto" src="logo-mercado-liebre.svg">
-   <div>
-     <input class="w-50" type="text" name="barradebusqueda" id="search" placeholder="Buscar productos, marcas">
-     <button><i class="fas fa-search"></i></button>
-   </div>
-    <p class="compraen"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito.</p>
-    
-    <nav class="navegador"> 
+  <header>  
+    <div class="d-flex flex-row align-c">
+      <img class="w-50 margin-14" src="images/logo-mercado-liebre.svg">
+      <input class="w-50 search-b " type="text" name="barradebusqueda" placeholder="Buscar productos, marcas">
+      <button class="search-b"><i class="fas fa-search"></i></button>
+    </div>
+  
+    <div> 
+     <p class="compraen"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito.</p>
+    </div>
+  
+    <nav class="navegador d-flex justify-center"> 
      <div class= "hamburger-container">
-     <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
      
-       <ul class="links">
+     <ul class="links">
        <li><a href="#">Ofertas</a></li>
        <li><a href="#">Tiendas Oficiales</a></li>
        <li><a href="#">Vender</a></li>
@@ -54,7 +57,7 @@
     </div>
     
     <div>
-      <label for= "fechadenacimiento">Fecha de Nacimiento</label><br>
+      <label class="margin-20-20" for= "fechadenacimiento">Fecha de Nacimiento</label><br>
       <input class="login" type="date" id="fechadenacimiento" name="fechadenacimiento">
     </div>
     
@@ -64,22 +67,24 @@
     </div>
 
     <div>
-      <p><label for="">Perfil de Usuario</label></p><br>
+      <label class="margin-20-20" for="">Perfil de Usuario</label><br>
+      <div class="d-flex justify-around margin-20-20">
       <input type="radio" name="usuario" value="Comprador">Comprador
       <input type="radio" name="usuario" value="Vendedor">Vendedor 
+      </div>
     </div> 
 
-    <div>
-      <p><label for="">Intereses</label><br></p>
-      <input class="login" type="checkbox" name="categoría" value="electro"> Electro 
-      <input class="login" type="checkbox"name="categoría" value="moda"> Moda 
-      <input class="login" type="checkbox" name="categoría" value="hogar"> Hogar
-      <input class="login" type="checkbox"name="categoría" value="jugueteria"> Juguetería 
-      <input class="login" type="checkbox" name="categoría" value="vida sana"> Vida Sana
+    <div style="margin-top: 20px;">
+      <p><label class="margin-20-20" for="">Intereses</label></p><br>
+      <input class="intereses-list" type="checkbox" name="categoría" value="electro">Electro</br> 
+      <input class="intereses-list" type="checkbox"name="categoría" value="moda">Moda</br>
+      <input class="intereses-list" type="checkbox" name="categoría" value="hogar">Hogar</br>
+      <input class="intereses-list" type="checkbox"name="categoría" value="jugueteria">Juguetería </br>
+      <input class="intereses-list" type="checkbox" name="categoría" value="vida sana">Vida Sana</br>
     </div>
-  
-    <div>
-      <label for="">Elegí tu foto de usuario</label>
+    
+    <div style="margin-top: 20px;">
+      <label class="margin-20-20" for="">Elegí tu foto de usuario</label><br>
       <input class="login" type="file" name="archivoadjunto" value="archivoadjunto">
     </div>
    
@@ -100,25 +105,25 @@
 
   </main>    
 
-  <footer class="piedepagina">
+  <footer class="piedepagina d-flex flex-column centro">
     <article class="artpie">
       <i class="fas fa-credit-card logoazul"></i> 
       <p class="titulopie">Pagá con tarjeta o en efectivo</p>
       <p class="parrafospie">Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es seguro!</p>
     </article>
-  
+
     <article class="artpie">
       <i class="fas fa-gift logoazul"></i>
       <p class="titulopie">Envío gratis desde los $ 2.500</p>
       <p class="parrafospie">Solo por estar registrado en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de MercadoPuntos.</p>
     </article>
-  
+
     <article class="artpie">
       <i class="fas fa-user-shield logoazul"></i>
       <p class="titulopie">Seguridad, de principio a fin</p>
       <p class="parrafospie">¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@.</p>
     </article>
-  
+
     <div class="parrafospie "artpie"">Copyright © 1999-2019 MercadoLiebre S.R.L.</div>
     
   </footer>

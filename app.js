@@ -2,23 +2,25 @@ const express = require('express')
 const app = express()
 const path = require ('path')
 
+app.use(express.static(__dirname + "/public"));
+
 app.get('/', function (req, res){
-    let file = path.resolve('index.html')
+    let file = path.resolve('views/index.html')
     res.sendFile(file)
 })
 
 app.get('/registro', function (req, res){
-    let file = path.resolve('registro.html')
+    let file = path.resolve('views/registro.html')
     res.sendFile(file)
 })
 
 app.get('/login', function (req, res){
-    let file = path.resolve('login.html')
+    let file = path.resolve('views/login.html')
     res.sendFile(file)
 })
 
 app.get('/miscompras', function (req, res){
-    let file = path.resolve('miscompras.html')
+    let file = path.resolve('views/miscompras.html')
     res.sendFile(file)
 })
 

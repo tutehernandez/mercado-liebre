@@ -3,26 +3,29 @@
   <head>
     <title>Mercado Liebre</title>
     <meta charset='uft-8'>
-    <link rel="stylesheet" href="style_ml.css">
+    <link rel="stylesheet" href="styles/style_ml.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   </head>
 
 <body>
-  <header class="head">  
-    <img class="w-50" width="auto" src="logo-mercado-liebre.svg">
-   <div>
-     <input class="w-50" type="text" name="barradebusqueda" id="search" placeholder="Buscar productos, marcas">
-     <button><i class="fas fa-search"></i></button>
-   </div>
-    <p class="compraen"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito.</p>
-    
-    <nav class="navegador"> 
+  <header>  
+    <div class="d-flex flex-row align-c">
+      <img class="w-50 margin-14" src="images/logo-mercado-liebre.svg">
+      <input class="w-50 search-b " type="text" name="barradebusqueda" placeholder="Buscar productos, marcas">
+      <button class="search-b"><i class="fas fa-search"></i></button>
+    </div>
+  
+    <div> 
+     <p class="compraen"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito.</p>
+    </div>
+  
+    <nav class="navegador d-flex justify-center"> 
      <div class= "hamburger-container">
-     <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
      
-       <ul class="links">
+     <ul class="links">
        <li><a href="#">Ofertas</a></li>
        <li><a href="#">Tiendas Oficiales</a></li>
        <li><a href="#">Vender</a></li>
@@ -36,20 +39,26 @@
     </nav>
  </header>
 
-  <body>
-    <br>
-    <br>
-    <br>
+ <main>
+  <form action="//localhost:4040" method="GET">
 
+  <div>
+    <label for= "nombreusuario"></label>
+    <input class="login" type="text" id="nombreusuario" name="nombreusuario" placeholder="Nombre de usuario">
+   </div>
 
-COMPRANDO EN MERCADO LIEBRE
+   <div>
+    <label for= "password"></label>
+    <input class="login" type="password" id="password" name="password" placeholder="Elegí tu contaseña">
+  </div>
+  
+   <div>
+    <button class="enviar" type="submit">Enviar</button>
+   </div>  
+  
+ </main>
 
-<br>
-<br>
-<br>
-
-
-<footer class="piedepagina">
+ <footer class="piedepagina d-flex flex-column centro">
   <article class="artpie">
     <i class="fas fa-credit-card logoazul"></i> 
     <p class="titulopie">Pagá con tarjeta o en efectivo</p>
@@ -74,5 +83,3 @@ COMPRANDO EN MERCADO LIEBRE
 
 </body>
 </html>
-
-  
